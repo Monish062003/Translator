@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+
+    <title>Document</title>
+
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Merriweather:wght@300;400;700;900&display=swap');
+    </style>
+
+    
+
+    <!-- <link rel="stylesheet" href="translate.css"> -->
+    <link rel="stylesheet" href="./translator.css">
+    <script src="translate.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <img src="./images/volumeon.png" id="volimg" class="block w-10 h-10 rounded-md absolute left-5 top-5" style="background-color:rgb(255,255,255,0.5); border-color:white">
+    <div class="containers">
+        <label id="text">Enter Text </label> 
+        <div id="firstinnercontainer" class="flex justify-between flex-wrap">
+            <img src="./images/microphoneoff.png" id="micimg" class="block w-10 h-10 rounded-md" style="background-color:white">
+            <input type="text" id="inputlang" class="block mx-3">
+        </div>
+        <label id="text">Translation</label>
+        <div class="innercontainer">
+            <select id="selection" class="selection"></select>
+            <input type="text" id="outputlang" disabled>
+        </div>
+        <button style="background-color: white; color:black;">Check</button>
+        <p id="textparah" class="textparah"></p>
+    </div>
+</body>
+</html>

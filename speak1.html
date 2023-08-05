@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Speech Synthesis Example</title>
+</head>
+<body>
+  <button onclick="speak()">Speak</button>
+
+  <script>
+    function speak() {
+      const utterance = new SpeechSynthesisUtterance("Sohum gaandu hai");
+      speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>
